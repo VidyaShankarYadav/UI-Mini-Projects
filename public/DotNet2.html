@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My .NET Developer Roadmap</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #f8fafc;
+      color: #1e293b;
+      line-height: 1.5;
+    }
+
+    /* ---------- Header ---------- */
+    header {
+      background: #1e293b;
+      color: #fff;
+      text-align: center;
+      padding: 22px 16px 18px;
+    }
+    header h1 { font-size: 1.5rem; font-weight: 700; }
+    header p  { font-size: 0.75rem; margin-top: 4px; }
+
+    /* ---------- Layout ---------- */
+    .container {
+      max-width: 1700px;
+      margin: 0 auto;
+      padding: 18px 100px 30px;
+    }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+
+    /* ---------- Cards ---------- */
+    .card {
+      background: #aa4b4b;
+      border-radius: 10px;
+      padding: 16px 16px 20px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+    .card h2 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    /* Lists */
+    .card ol, .card ul { padding-left: 20px; font-size: 0.72rem; }
+    .card ol li { margin-bottom: 10px; padding-left: 4px; }
+    .card ul ul { margin-top: 2px; list-style: circle; padding-left: 16px; }
+    .card ul li { line-height: 1.6; }
+
+    /* Technology guide */
+    .guide dt { font-size: 0.72rem; font-weight: 700; margin-top: 2px; }
+    .guide dd { font-size: 0.7rem; margin: 0 0 3px 6px; color: #334155; }
+
+    /* ---------- Fieldset style boxes ---------- */
+    fieldset {
+      border: 1px solid #d5dbe3;
+      border-radius: 10px;
+      background: #fff;
+      padding: 16px 16px 24px;
+      min-height: 230px;
+    }
+    fieldset legend {
+      padding: 0 8px;
+      margin-left: 12px;
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+    fieldset ul { padding-left: 22px; font-size: 0.72rem; margin-top: 6px; }
+    fieldset ul li { margin-bottom: 9px; }
+
+    /* Skill bars */
+    .skill {
+      background: #f1f3f6;
+      border-radius: 4px;
+      padding: 6px 8px;
+      margin-bottom: 10px;
+      font-size: 0.72rem;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .skill .stars { color: #f5b301; letter-spacing: 2px; font-size: 0.85rem; }
+
+    /* ---------- Responsive ---------- */
+    @media (max-width: 900px) {
+      .container { padding: 16px; }
+      .grid-2 { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🚀 My .NET Developer Roadmap</h1>
+    <p>Learn → Practice → Build → Become a Developer</p>
+  </header>
+
+  <main class="container">
+
+    <!-- Row 1 -->
+    <section class="grid-2">
+      <div class="card">
+        <h2>📚 Learning Roadmap</h2>
+        <ol>
+          <li>Learn C# Basics</li>
+          <li>Master OOP Concepts</li>
+          <li>Learn Collections</li>
+          <li>Learn Exception Handling</li>
+          <li>Learn ADO.NET</li>
+          <li>Learn SQL</li>
+          <li>Build Projects</li>
+          <li>Practice Interview Questions</li>
+        </ol>
+      </div>
+
+      <div class="card">
+        <h2>🛠️ Technologies to Learn</h2>
+        <ul>
+          <li>Programming
+            <ul><li>C#</li><li>Python</li></ul>
+          </li>
+          <li>Database
+            <ul><li>SQL</li><li>SQL Server</li></ul>
+          </li>
+          <li>Tools
+            <ul><li>Git</li><li>GitHub</li></ul>
+          </li>
+          <li>Web
+            <ul><li>HTML</li><li>CSS</li></ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Row 2 -->
+    <section class="card guide" style="margin-bottom:16px;">
+      <h2>📖 Technology Guide</h2>
+      <dl>
+        <dt>C#</dt>
+        <dd>A programming language commonly used for building .NET applications.</dd>
+        <dt>SQL</dt>
+        <dd>A language used to communicate with databases.</dd>
+        <dt>Git</dt>
+        <dd>A version control system used to track code changes.</dd>
+        <dt>GitHub</dt>
+        <dd>A platform used to store and collaborate on code.</dd>
+        <dt>HTML</dt>
+        <dd>A markup language used to create the structure of web pages.</dd>
+        <dt>CSS</dt>
+        <dd>A stylesheet language used to design web pages.</dd>
+      </dl>
+    </section>
+
+    <!-- Row 3 -->
+    <section class="grid-2">
+      <fieldset>
+        <legend>🎯 My Learning Goals</legend>
+        <ul>
+          <li>Complete C# and .NET Basics</li>
+          <li>Solve 100 Coding Problems</li>
+          <li>Build 3 Projects</li>
+          <li>Learn SQL Server</li>
+          <li>Create GitHub Portfolio</li>
+          <li>Prepare for .NET Interviews</li>
+        </ul>
+      </fieldset>
+
+      <fieldset>
+        <legend>💡 My Skill Level</legend>
+        <div class="skill">C# <span class="stars">⭐⭐⭐⭐⭐</span></div>
+        <div class="skill">SQL <span class="stars">⭐⭐⭐⭐</span></div>
+        <div class="skill">HTML <span class="stars">⭐⭐⭐⭐</span></div>
+        <div class="skill">CSS <span class="stars">⭐⭐⭐</span></div>
+        <div class="skill">Git <span class="stars">⭐⭐⭐</span></div>
+      </fieldset>
+    </section>
+
+  </main>
+</body>
+</html>
+If you’d rather keep the CSS in its own file, copy everything between the <style> tags into style.css and add <link rel="stylesheet" href="style.css"> in the <head>.
+
+
+
+
+
+Claude is AI and can make mistakes. Please double-check responses.
+Claude finished the response

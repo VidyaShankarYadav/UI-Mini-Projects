@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <title>Lumora Studios</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        li {
+            list-style: none;
+        }
+
+        header {
+            background-color: red;
+            padding: 15px;
+            text-align: center;
+            color: white;
+        }
+
+        nav {
+            text-align: center;
+            background-color: rgb(251, 94, 41);
+            padding: 8px;
+            color: white;
+        }
+
+        nav span {
+            margin-right: 15px;
+            font-size: small;
+        }
+
+        section {
+            display: flex;
+            gap: 10px;
+            background-color: black;
+        }
+
+        .card {
+            flex: 1;
+            background-color: #504e4e;
+            margin: 30px;
+            text-align: center;
+
+
+        }
+
+        .card,
+        h3 {
+
+            color: white;
+            margin-top: 12px;
+        }
+
+        img {
+
+            width: calc(100% - 30px);
+            height: 200px;
+            margin: 15px;
+            display: block;
+            margin-top: 1px;
+
+        }
+
+        aside {
+            background-color: rgb(46, 46, 46);
+            color: white;
+            
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <h3>Lumora Studios</h3>
+        <p>Watch Unlimited Movies Anytime</p>
+    </header>
+
+    <nav>
+        <span>Home</span>
+        <span>Movies</span><span>Series</span><span>Contact</span>
+    </nav>
+
+    <section>
+        <div class="card">
+            <h3>Avengers: Endgame</h3>
+            <img src="./images/avangers-endgame.jpg" alt="Avengers">
+            <p> <span>E</span> arth's Mightiest Heroes unite for the final battle to save the <br> universe.</p>
+        </div>
+        <div class="card">
+            <h3>Interstellar</h3>
+            <img src="./images/Interstellar.jpg" alt="Interstellar">
+            <p><span>A</span>breathtaking journey through space and time to save <br> humanity.</p>
+            <p class="bi bi-star"></p>
+        </div>
+
+    </section>
+
+
+
+
+
+    <aside>
+        <div class="aside">
+            <h1>Trending Movies</h1>
+            <ul>
+                <li class="bi bi-check">Avengers</li>
+                <li class="bi bi-check">Interstellar</li>
+                <li class="bi bi-check">Batman</li>
+                <li class="bi bi-check">Spider-Man</li>
+            </ul>
+            <div style="background-color: rgb(193, 172, 37);"> <q> Movies touch our hearts and inspire our
+                    imagination</q>
+            </div>
+        </div>
+    </aside>
+    <footer>
+        <div>
+            <h2>Lumora Studios</h2>
+            <p>Entertainment • Adventure • Action</p>
+        </div>
+        <div>2026 Lumora-Studios. All Rights Reserved.</div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pixel-frame</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            text-align: center;
+            background-color: rgb(44, 43, 43);
+            color: rgb(255, 233, 37);
+            padding: 20px;
+            margin-bottom: 0;
+        }
+
+        main {
+            display: grid;
+            background-color: black;
+            margin-top: 0;
+            padding: 10px;
+            
+        }
+
+        section {
+
+            justify-content: center;
+            color: rgb(255, 219, 13);
+            text-align: center;
+            margin: 10px;
+            background-color: black;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            border: 1px solid rgb(226, 191, 51);
+            border-radius: 15px;
+            padding: 10px;
+        }
+
+        .card h1 {
+            color: gold;
+        }
+
+        .card-content p,
+        div {
+            margin-bottom: 6px;
+            
+            
+            font-family: arial;
+            color: white;
+        }
+
+        button {
+            color: black;
+            margin: 5px;
+            margin-bottom: 10px;
+        }
+
+        img {
+            width: 100%;
+            max-width: 500px;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin: 10px 0 15px;
+
+        }
+
+       
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>PIXELFRAME</h1>
+        <p>Capture • Create • Remember</p>
+    </header>
+    <main>
+
+        <section>
+            <div class="card">
+                
+                <h1>Wedding Stories</h1>
+                <img src="./images/wedding-2.jpg" alt="wedding image">
+                <div class="card-content">
+                    <p>Turning your special day into timeless memories.</p>
+                    <button style="background-color: rgb(255, 186, 83);">LIMITED TIME OFFER</button>
+                     <div>Old Price: <del>₹45,000</del></div>
+                   <div>New Price: <ins style="color: gold;">₹34,999</ins></div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="card">
+
+                <h1>Portrait Studio</h1>
+                <img src="./images/potriate.jpg" alt="wedding image">
+                <div class="card-content">
+                    <p>Professional portraits with creative lighting & style.</p>
+                    <button style="background-color: rgb(255, 186, 83);">LIMITED TIME OFFER</button>
+
+                    <div>Starting From: <ins style="color: gold;">₹2,999</ins></div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="card">
+
+                <h1>Cinematic Moments</h1>
+                <img src="./images/cinimatic-2.jpg" alt="wedding image">
+                <div class="card-content">
+                    <p>Beautiful stories. Beautifully captured.</p>
+                    <button style="background-color: rgb(255, 186, 83);">LIMITED TIME OFFER</button>
+                    <div><ins>Book Your Session Today</ins></div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
