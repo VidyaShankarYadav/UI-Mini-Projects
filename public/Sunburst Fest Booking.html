@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <title>Forms</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        }
+
+        section {
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            width: 500px;
+            height: auto;
+            background-color: rgb(232, 230, 227);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .header {
+            background-color: #534AB7;
+            display: flex;
+            justify-content: start;
+            color: #EEEDFE;
+            line-height: 25px;
+            text-align: center;
+        }
+
+        .header-left {
+            font-size: 50px;
+            justify-content: center;
+            text-align: center;
+            color: #FAC775;
+            margin: 16px;
+            text-align: center;
+        }
+
+        .header-right p {
+            color: #CECBF6;
+            /* soft purple subtitle */
+        }
+
+        .header-right {
+            justify-content: center;
+            text-align: center;
+            margin-top: 17px;
+            text-align: center;
+        }
+
+        .name-section {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+        }
+
+        .name-section input {
+            padding: 5px;
+            height: 30px;
+            border-radius: 5px;
+            border: 1px solid #AFA9EC;
+            box-sizing: border-box;
+        }
+
+        .email-section {
+            margin: 20px;
+        }
+
+        .email-section input {
+            padding: 5px;
+            height: 30px;
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid #AFA9EC;
+            box-sizing: border-box;
+        }
+
+        .ticket {
+            margin: 0px 20px;
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        .ticket-general {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 33%;
+            height: 100px;
+            align-items: center;
+            padding: 10px;
+            background-color: rgb(81, 179, 235);
+            border-radius: 5px;
+            gap: 5px;
+            cursor: pointer;
+        }
+
+        .ticket-general input {
+            width: 15px;
+            height: 15px;
+            border-radius: 5px;
+        }
+
+        .favourite {
+            margin: 20px;
+        }
+
+        .card-favourite {
+            display: flex;
+            gap: 10px;
+            cursor: pointer;
+            margin-top: 5px;
+        }
+
+        .card-indie {
+            background-color: rgb(94, 132, 237);
+            padding: 5px 10px 5px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
+        .select-day {
+            padding: 5px;
+            height: 30px;
+            width: 250px;
+            border-radius: 5px;
+            border: 1px solid #AFA9EC;
+            box-sizing: border-box;
+        }
+
+        .total {
+            margin: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            background-color: #E6F1FB;
+            /* was rgb(171, 217, 244) */
+            color: #0C447C;
+
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        .last {
+            margin: 20px;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            text-align: center;
+        }
+
+        .last-button {
+            margin: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+
+        }
+
+        .button1 button {
+            background-color: #D85A30;
+            font-size: 15px;
+            color: #FAECE7;
+            border-color: #D85A30;
+            padding: 5px 140px 5px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button1 button:hover{
+            background-color: #eb6437;
+            border-color: #A13E1D;
+        }
+
+        .button2 button {
+            color: #534AB7;
+            background-color: #FFFFFF;
+            border-color: #AFA9EC;
+            font-size: 15px;
+            cursor: pointer;
+            padding: 5px 20px 5px;
+            border-radius: 5px;
+        }
+        .button2 button:hover{
+            background-color: #E6E6E6;
+            border-color: #AFA9EC;
+        }
+
+        .ticket label:nth-child(1) {
+            background-color: #E1F5EE;
+            color: #085041;
+            border: 1px solid #5DCAA5;
+        }
+
+        .ticket label:nth-child(2) {
+            background-color: #FAECE7;
+            color: #712B13;
+            border: 1px solid #D85A30;
+        }
+
+        .ticket label:nth-child(3) {
+            background-color: #FBEAF0;
+            color: #72243E;
+            border: 1px solid #ED93B1;
+        }
+
+
+        dd {
+            color: #534AB7;
+        }
+
+        .favourite>p {
+            color: #5F5E5A;
+        }
+
+        .last span {
+            color: #534AB7;
+        }
+    </style>
+
+</head>
+
+<body>
+    <section>
+        <div class="card">
+            <div class="header">
+                <div class="header-left"><i class="bi bi-apple-music"></i></div>
+                <div class="header-right">
+                    <h2>Sunburst Music Fest</h2>
+                    <p>12 to 14 December, Hydera0
+                        bad</p>
+                </div>
+            </div>
+            <div class="name-section">
+                <div>
+                    <dl>
+                        <dd style="color: rgb(103, 103, 226);">Full name</dd>
+                        <dt>
+                            <form method="post" action="">
+                                <input type="text" placeholder="Aman Yadav" name="user name">
+                            </form>
+                        </dt>
+                    </dl>
+                </div>
+                <div>
+                    <dl>
+                        <dd style="color: rgb(103, 103, 226);">Phone</dd>
+                        <dt>
+                            <form method="post" action="">
+                                <input type="tel" name="mobile-number" placeholder="9676876534">
+                            </form>
+                        </dt>
+                    </dl>
+                </div>
+            </div>
+            <div class="email-section">
+                <dl>
+                    <dd style="color: #534AB7;">Email</dd>
+                    <dt>
+                        <form action="post">
+                            <input type="email" name="Email" placeholder="Email Address" id="#email">
+                        </form>
+                    </dt>
+                </dl>
+
+            </div>
+            <p style="margin-bottom: 5px; margin-left: 20px; ">Ticket type</p>
+            <div class="ticket">
+                <label class="ticket-general" for="general">
+                    <p><input type="checkbox" name="general" id="general"></p>
+                    <p>General</p>
+                    <p>$99</p>
+                </label>
+                <label class="ticket-general" for="vip">
+                    <p><input type="checkbox" name="vip" id="vip"></p>
+                    <p>VIP</p>
+                    <p>$99</p>
+                </label>
+                <label class="ticket-general" for="backstage">
+                    <p><input type="checkbox" name="backstage" id="backstage"></p>
+                    <p>Backstage</p>
+                    <p>$99</p>
+                </label>
+            </div>
+
+            <div class="name-section">
+                <div>
+                    <dl>
+                        <dd style="color: rgb(103, 103, 226);">Day</dd>
+                        <dt>
+                            <select class="select-day" name="days" id="">
+                                <option value="">All 3 days</option>
+                                <option value="">day 1</option>
+                                <option value="">Day 2</option>
+                                <option value="">Day 3</option>
+                            </select>
+                        </dt>
+                    </dl>
+                </div>
+                <div>
+                    <dl>
+                        <dd style="color: rgb(103, 103, 226);">Tickets</dd>
+                        <dt>
+                            <form method="post" action="">
+                                <input type="number" name="tickets" value="3" max="5" required>
+                            </form>
+                        </dt>
+                    </dl>
+                </div>
+            </div>
+            <div class="favourite">
+                <p>Favorite genres</p>
+                <div class="card-favourite">
+                    <label class="card-indie" for="indie">
+                        <form action="">
+                            <input type="checkbox" name="indie" id="indie">
+                            <label>Indie</label>
+                        </form>
+                    </label>
+                    <label class="card-indie" for="rock">
+
+                        <form action="">
+                            <input type="checkbox" name="rock" id="rock">
+                            <label for="rock">Rock</label>
+                        </form>
+
+                    </label>
+                    <label class="card-indie" for="electronic">
+
+                        <form action="">
+                            <input type="checkbox" name="electronic" id="electronic">
+                            <label for="electronic">Electronic</label>
+                        </form>
+                    </label>
+                    <label class="card-indie" for="pop">
+                        <form action="">
+                            <input type="checkbox" name="rock" id="pop">
+                            <label for="pop">Pop</label>
+                        </form>
+
+                    </label>
+                    <label class="card-indie" for="jazz">
+                        <form action="">
+                            <input type="checkbox" name="jazz" id="jazz">
+                            <label for="jazz">Jazz</label>
+                        </form>
+                    </label>
+                </div>
+
+            </div>
+            <div class="total">
+                <p>Total for 2 VIP tickets</p>
+                <p style="font-weight: bold; letter-spacing: 1px;">$99</p>
+
+            </div>
+
+            <div class="last">
+                <label for="t&c">
+                    <input type="checkbox" name="t&c" id="t&c">
+                    <span style="color: rgb(103, 103, 226);">I agree to the terms and conditions</span>
+                </label>
+            </div>
+            <div class="last-button">
+                <div class="button1">
+                    <button>
+                        <span>Book now</span>
+                    </button>
+                </div>
+                <div class="button2">
+                    <button>
+                        <span>Cancel</span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
