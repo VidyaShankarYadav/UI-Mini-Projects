@@ -1,17 +1,32 @@
-
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>HTML Table</title>
     <style>
-        tr{
+        tr {
             font-size: 35px;
         }
-        table{
+
+        table {
             margin-bottom: 60px;
+        }
+        .Fourth-table table{
+            border-collapse: collapse;
+            width: 320px;
+        }
+        .Fourth-table  th, td {
+            border: 2px solid #555;
+            padding: 12px;
+            text-align: left;
+            font-size: 18px;
+        } 
+        .Fourth-table  th{
+            text-align: center;
         }
     </style>
 </head>
+
 <body>
     <h1>Sample Table</h1>
     <table border="3" width="200">
@@ -36,7 +51,7 @@
             <td>Bhopal</td>
         </tr>
     </table>
-    
+
     <table border="3">
         <tr>
             <th>Product</th>
@@ -92,12 +107,89 @@
             <td>Coordinator</td>
         </tr>
     </table>
-    <table style="border: 2px solid red;">
+    
+    <div class="Fourth-table">
+         <table>
         <tr>
-            <th >Email</th>
-            <th>Tobias</th>
-            <th>Linus</th>
+            <th>EMIL</th>
+            <th>TOBIAS</th>
+            <th>LINUS</th>
+        </tr>
+        <tr>
+            <td>8:00 AM</td>
+            <td>8:00 AM</td>
+            <td>8:00 AM</td>
+        </tr>
+        <tr>
+            <td>9:00 AM</td>
+            <td>9:00 AM</td>
+            <td>9:00 AM</td>
+        </tr>
+        <tr>
+            <td>10:00 AM</td>
+            <td>10:00 AM</td>
+            <td>10:00 AM</td>
+        </tr>
+        <tr>
+            <td>11:00 AM</td>
+            <td>11:00 AM</td>
+            <td>11:00 AM</td>
+        </tr>
+        <tr>
+            <td>12:00 PM</td>
+            <td>12:00 PM</td>
+            <td>12:00 PM</td>
         </tr>
     </table>
+    <table>
+        <tr>
+            <th>8:00 </th>
+            <th>9:00 </th>
+            <th>10:00 </th>
+            <th>11:00 </th>
+            <th>12:00 </th>
+            <th>13:00 </th>
+        </tr>
+        <tr>
+            <td>Meeting</td>
+            <td>Project</td>
+            <td>Lunch</td>
+            <td>Meeting</td>
+            <td>Task</td>
+            <td>Break</td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <th>Monday</th>
+            <th>tuesday</th>
+            <th>Wednsday</th>
+            <th>thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+            <th>Sunday</th>
+        </tr>
+        <tr>
+            <td>8:00</td>
+            <td>9:00</td>
+            <td>10:00</td>
+            <td>11:00</td>
+            <td>12:00</td>
+            <td>13:00</td>
+            <td>14:00</td>
+        </tr>
+        <tr>
+            <td>Team</td>
+            <td>Work</td>
+            <td>call</td>
+            <td>Report</td>
+            <td>Meeting</td>
+            <td>Lunch</td>
+            <td>Review</td>
+        </tr>
+    </table>
+    
+    </div>
 </body>
+
 </html>
