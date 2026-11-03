@@ -95,6 +95,21 @@
         .Mission-Briefing progress,textarea {
             width: 100%;
         }
+        button{
+            
+            margin-left: 5px;
+            margin-top: 10px;
+            margin-bottom: 30px;
+            width: 97%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+        button span{
+            font-weight: bolder;
+            font-size: larger;
+            color: rgb(0, 0, 0);
+        }
     </style>
 </head>
 
@@ -127,7 +142,7 @@
                     <div class="explore-name">
                         <dl>
                             <dt>Age</dt>
-                            <dd><input type="number" name="Age" id="Explore Name" placeholder="18"></dd>
+                            <dd><input type="number" name="Age" id="Explore Name" placeholder="18" ></dd>
                         </dl>
                         <dl>
                             <dt>Reporting Time</dt>
@@ -193,6 +208,7 @@
                             <dd><textarea name="text" id="text" placeholder="write your answer here..."></textarea></dd>
                         </dl>
                     </div>
+                   <button type="submit" class="btn btn-primary"><span>Register Mission</span></button>
                 </form>
             </div>
 
