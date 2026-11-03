@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>Gym Membership Form</title>
+    <style>
+        .container {
+            max-width: 550px;
+            background-color: #a9c2ed;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 8px 10px 15px rgb(8, 8, 8);
+            overflow: hidden;
+        }
+
+        .container1 {
+            max-width: 500px;
+            margin: 20px;
+            height: auto;
+        }
+
+        img {
+
+            margin-top: 10px;
+            height: 250px;
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px black;
+        }
+
+        .form-check,
+        input,
+        label {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body class="container-fluid">
+    <div class="container">
+        <div class="container1">
+            <header class="text-center">
+                <h1 class="fw-bold">🏋️ Gym Membership Portal</h1>
+                <img class="w-100" src="./images/Gym.jpg" alt="Gym">
+            </header>
+            <form action="">
+                <div class="form-content mt-3 fw-bold">
+                    <div class="col-12">
+                        <label for="form-label">Member Name</label>
+                        <input type="text" class="form-control" placeholder="Enter Member Name">
+
+                        <label style="margin-top: 10px;" for="form-label">Password</label>
+                        <input type="password" class="form-control">
+
+                        <label style="margin-top: 10px;" for="form-label">Gender</label>
+                        <div class="d-flex gap-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                                <label class="form-check-label" for="male">Male</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gender" id="female" value="male">
+                                <label class="form-check-label" for="female">Female</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gender" id="other" value="other">
+                                <label class="form-check-label" for="other">Other</label>
+                            </div>
+                        </div>
+                        <label style="margin-top: 10px;" for="fitness-goal">Fitness Goal</label>
+                        <select class="form-select" id="fitness-goal">
+                            <option value="weight-loss">Weight Loss</option>
+                            <option value="muscle-gain">Muscle Gain</option>
+                            <option value="endurance">Endurance</option>
+                            <option value="flexibility">Flexibility</option>
+                        </select>
+                        <label class="mt-3" for="membership-plan">Membership Plan</label>
+                        <select class="form-select" name="" id="membership-plan">
+                            <option value="select plan">Select Plan</option>
+                            <option value="monthly">Monthly</option>
+                            <option value="quaterly">Quaterly</option>
+                            <option value="yearly">Yearly</option>
+                        </select>
+
+                        <label class="mt-3" for="joining-date">Joining Daye</label>
+                        <input type="date" class="form-control" id="joining-date">
+
+                        <label class="mt-3" for="theme-color">Theme Color</label>
+                        <input type="color" class="form-control" id="theme-color">
+
+                        <label class="mt-3" for="medical-report">Upload Medical Report</label>
+                        <input type="file" class="form-control" id="medical-report">
+
+                        <label for="health-notes">Health Notes</label>
+                        <textarea class="form-control" id="health-notes" name="health-notes" rows="4"
+                            placeholder="Enter your health notes...">
+                        </textarea>
+
+                        <p>BMI Meter</p>
+
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-success" style="width: 70%">
+                                70%
+                            </div>
+                        </div>
+
+                        <p>Registration Progress</p>
+
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" style="width: 90%">
+                                90%
+                            </div>
+                        </div>
+                    </div>
+                   <hr>
+
+                    <div class=" gap-3 mt-5">
+
+                        <button style="margin-bottom: 10px;" type="submit" class="btn btn-primary w-100">
+                            Submit
+                        </button>
+
+                        <button type="reset" class="btn btn-danger w-100">
+                            Reset
+                        </button>
+
+                    </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
