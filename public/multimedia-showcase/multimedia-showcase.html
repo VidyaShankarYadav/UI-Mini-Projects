@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Multimedia Showcase</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f5f9;
+            color: #1e293b;
+            line-height: 1.6;
+        }
+
+        /* Header */
+
+        header {
+            background: linear-gradient(135deg, #172554, #2563eb);
+            color: white;
+            text-align: center;
+            padding: 30px 15px;
+        }
+
+        header h1 {
+            font-size: 32px;
+            margin-bottom: 5px;
+        }
+
+        header p {
+            font-size: 15px;
+            color: #dbeafe;
+        }
+
+        /* Navigation */
+
+        nav {
+            background-color: #0f172a;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #60a5fa;
+        }
+
+        /* Main Container */
+
+        .container {
+            max-width: 1000px;
+            width: 90%;
+            margin: 30px auto;
+        }
+
+        .welcome {
+            background-color: #dbeafe;
+            border-left: 5px solid #2563eb;
+            padding: 18px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .welcome h2 {
+            color: #1d4ed8;
+            margin-bottom: 8px;
+        }
+
+        /* Multimedia Cards */
+
+        .media-card {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .media-card h2 {
+            color: #1d4ed8;
+            margin-bottom: 8px;
+        }
+
+        .media-card p {
+            color: #64748b;
+            margin-bottom: 15px;
+        }
+
+        video {
+            width: 100%;
+            max-height: 400px;
+            border-radius: 8px;
+            background-color: black;
+        }
+
+        audio {
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        iframe {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            border: none;
+            border-radius: 8px;
+        }
+
+        /* Format Section */
+
+        .format-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .format-box {
+            flex: 1;
+            min-width: 220px;
+            background-color: #eff6ff;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #bfdbfe;
+        }
+
+        .format-box h3 {
+            color: #1d4ed8;
+            margin-bottom: 12px;
+        }
+
+        .format-box ul {
+            padding-left: 20px;
+        }
+
+        .format-box li {
+            margin-bottom: 7px;
+        }
+
+        /* About Section */
+
+        .about {
+            background-color: white;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .about h2 {
+            color: #1d4ed8;
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+
+        footer {
+            background-color: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 18px;
+            margin-top: 30px;
+        }
+
+        /* Responsive Design */
+
+        @media (max-width: 600px) {
+
+            header h1 {
+                font-size: 25px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px 8px;
+            }
+
+            .container {
+                width: 94%;
+            }
+
+            .media-card {
+                padding: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+        <h1>🎬 Multimedia Showcase</h1>
+        <p>Learn • Watch • Listen • Explore</p>
+    </header>
+
+    <!-- Navigation -->
+
+    <nav>
+        <a href="#video">Video</a>
+        <a href="#audio">Audio</a>
+        <a href="#youtube">YouTube</a>
+        <a href="#about">About</a>
+    </nav>
+
+    <!-- Main Content -->
+
+    <main class="container">
+
+        <!-- Welcome Section -->
+
+        <section class="welcome">
+            <h2>🎉 Welcome to Multimedia Showcase</h2>
+
+            <p>
+                Learn HTML Video, Audio & Iframe Concepts Easily 🚀
+            </p>
+        </section>
+
+        <!-- Featured Video -->
+
+        <section class="media-card" id="video">
+
+            <h2>🎥 Featured Video</h2>
+
+            <p>
+                Watch the featured multimedia video below.
+            </p>
+
+            <video controls>
+
+                <source src="./images/mixkit-waterfall-in-forest-2213-hd-ready.mp4" type="video/mp4">
+
+                Your browser does not support the video element.
+
+            </video>
+
+        </section>
+
+        <!-- Featured Audio -->
+
+        <section class="media-card" id="audio">
+
+            <h2>🎵 Featured Audio</h2>
+
+            <p>
+                Listen to our multimedia audio demonstration.
+            </p>
+
+            <audio controls>
+
+                <source src="./images/Tujhe Kitna Chahein Aur (Film Version) - NaaSongs.mp3" type="audio/mpeg">
+
+                Your browser does not support the audio element.
+
+            </audio>
+
+        </section>
+
+        <!-- YouTube Video -->
+
+        <section class="media-card" id="youtube">
+
+            <h2>📺 Embedded YouTube Video</h2>
+
+            <p>
+                Watch our YouTube multimedia tutorial.
+            </p>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/M7lc1UVf-VE?si=0ZyM2h9DNmtChRRr"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        </section>
+
+        <!-- Supported Formats -->
+
+        <section class="media-card">
+
+            <div class="format-container">
+
+                <div class="format-box">
+
+                    <h3>🎞 Supported Video Formats</h3>
+
+                    <ul>
+                        <li>.mp4</li>
+                        <li>.avi</li>
+                        <li>.ogg</li>
+                        <li>.webm</li>
+                    </ul>
+
+                </div>
+
+                <div class="format-box">
+
+                    <h3>🎵 Supported Audio Formats</h3>
+
+                    <ul>
+                        <li>.mp3</li>
+                        <li>.wav</li>
+                        <li>.ogg</li>
+                        <li>.midi</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- About Multimedia -->
+
+        <section class="about" id="about">
+
+            <h2>📖 About Multimedia</h2>
+
+            <p>
+                HTML Multimedia allows us to display videos,
+                play audio files, embed YouTube videos, and create
+                interactive multimedia webpages.
+            </p>
+
+            <p>
+                Modern HTML mainly uses the video, audio, and
+                iframe elements for multimedia content.
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer>
+        <p>© 2026 Multimedia Showcase Website</p>
+    </footer>
+
+</body>
+
+</html>
